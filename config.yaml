@@ -27,7 +27,6 @@ runlog:
 #    runcmd: map -profile mpiexec
 
 #repeat: True
-collate: False
 
 #collate:
 #    jobname: colltest
