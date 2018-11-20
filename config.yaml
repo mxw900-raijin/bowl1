@@ -1,0 +1,36 @@
+# PBS
+queue: express
+ncpus: 4
+walltime: 0:10:00
+mem: 1GB
+jobname: bowl1
+description: Standard MOM bowl test
+
+# Model
+model: mom
+input: bowl1
+exe: mom51_solo_default
+#exe_prefix: /short/fp0/mxw900/mom/bin/env-wrapper.sh
+#exe: mom51_solo_newfms
+#exe: fms_MOM_solo_fp.x
+
+#runlog: False
+runlog:
+    username: marshallward
+    organization: mxw900-raijin
+
+#modules:
+#    - allinea-forge/7.0.3
+#    - openmpi/1.8.4
+
+#mpi:
+#    runcmd: map -profile mpiexec
+
+#repeat: True
+collate: False
+
+#collate:
+#    jobname: colltest
+#
+userscripts:
+    archive: test.sh
